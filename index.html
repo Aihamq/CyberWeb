@@ -20,15 +20,38 @@
 <p> Kontakt Form </p>
 
  	
-<form action="mail.php" method="get">
-  Name: <input type="text" name="name"><br>
-  Email: <input type="text" name="email"><br>
-  Message: <input type="text" name="message"><br>
-  <input type="submit" value="Submit">
+<form action="mail.php" method="POST">
+<p>Name</p> <input type="text" name="name">
+<p>Email</p> <input type="text" name="email">
+<p>Phone</p> <input type="text" name="phone">
+
+<p> Ska jag ringa tillbaka </p>
+Yes:<input type="checkbox" value="Yes" name="call"><br />
+No:<input type="checkbox" value="No" name="call"><br />
+
+<p>Website</p> <input type="text" name="website">
+
+<p>Är det viktig </p>
+<select name="priority" size="1">
+<option value="Low">Low</option>
+<option value="Normal">Normal</option>
+<option value="High">High</option>
+<option value="Emergency">Emergency</option>
+</select>
+<br />
+
+<p>Type</p>
+<select name="type" size="1">
+<option value="update">Website Update</option>
+<option value="change">Change Information </option>
+<option value="addition">Information</option>
+<option value="new">New</option>
+</select>
+<br />
+
+<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+<input type="submit" value="Send"><input type="reset" value="Clear">
 </form>
  	
-<ul> Web	<ol> Html <li>
- 	
-<mark> Nej </mark>
  </body>
-<!-- --> 	
+
