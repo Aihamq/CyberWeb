@@ -1,17 +1,29 @@
 <html>
  
-<head>
-
  
+ 
+<head>
+<link href="styles/style.css" rel="stylesheet">
 <meta charset= "utf-8" >
 <title> CyberQ </title>
+
+
 </head>
 <body> 
-
-<link href="styles/style.css" rel="stylesheet">
+<div class="toggle"></div>
+<div class="content">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')
+            $('body').toggleClass('night')
+        })
+    })
+</script>
 
 <center> <a href="http://projektab.esy.es/">Kontakta mig</a> </center>
-<center> <p>  Konakt form på ett annat domen för att Github har inte php   </p> </center>
+<center> <p>  Konakt form på ett annat domain för att Github har inte php   </p> </center>
 <center><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick" />
 <input type="hidden" name="hosted_button_id" value="8B6QLEW7R9MM8" />
@@ -19,5 +31,6 @@
 <img alt="" border="0" src="https://www.paypal.com/en_SE/i/scr/pixel.gif" width="1" height="1" />
 </form> </center>
 
-
+</div>
 </body>
+</html>
